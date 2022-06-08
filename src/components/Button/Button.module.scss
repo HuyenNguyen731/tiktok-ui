@@ -28,6 +28,12 @@
     margin-left: 8px;
 }
 
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+
 // btn types
 .rounded {
     border-radius: 9999px;
@@ -66,8 +72,6 @@
         text-decoration: underline;
     }
 }
-
-// disabled
 
 // btn sizes
 .small {
