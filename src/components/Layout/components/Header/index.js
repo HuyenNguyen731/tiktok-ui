@@ -25,6 +25,8 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
+import { MessageIcon, UploadIcon } from '~/components/Icons';
+import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
@@ -143,7 +145,12 @@ function Header() {
                         <>
                             <Tippy delay={(0, 250)} content="upload video" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faCloudUpload} />
+                                    <UploadIcon />
+                                </button>
+                            </Tippy>
+                            <Tippy delay={(0, 250)} content="upload video" placement="bottom">
+                                <button className={cx('action-btn')}>
+                                    <MessageIcon />
                                 </button>
                             </Tippy>
                         </>
@@ -155,10 +162,11 @@ function Header() {
                     )}
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 className={cx('user-avatar')}
                                 src="https://lh3.googleusercontent.com/ogw/ADea4I6_4s4aaZ16m_nDPkHS1yAi33FuuOA75yT4VfVadw=s64-c-mo"
                                 alt="Hoa"
+                                fallback="https://yt3.ggpht.com/wgneNTiW753q5G6XMnjyNLAzReR4TVFJryTKTpIqJefrKMyhABPwfnyNWIoT5NNGstFlva1tgw=s88-c-k-c0x00ffffff-no-rj"
                             />
                         ) : (
                             <button className={cx('more-btn')}>
