@@ -23,12 +23,12 @@ html {
 }
 
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
+    // font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'ProximaNova', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     color: var(--text-color);
-    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 button,
@@ -36,12 +36,28 @@ input,
 [tabindex] {
     outline: none;
     border: none;
-    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/ProximaNova-Semibold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: SofiaPro;
+    src: url('/assets/fonts/sofiapro-semibold.otf');
 }
 
 // custom tippy tooltip
@@ -52,7 +68,6 @@ body {
         font-size: 1.6rem;
         line-height: 2.2rem;
         background-color: rgba(84, 84, 84, 0.92);
-        font-family: 'IBM Plex Sans', sans-serif;
     }
 
     .tippy-arrow {
