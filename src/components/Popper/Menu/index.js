@@ -59,7 +59,7 @@ function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn 
                                 }}
                             />
                         )}
-                        {renderItems()}
+                        <p className={cx('menu-body')}>{renderItems()}</p>
                     </PopperWrapper>
                 </div>
             )}
