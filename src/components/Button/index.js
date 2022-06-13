@@ -71,7 +71,20 @@ function Button({
 // ReactNode: anything that can be rendered: numbers, strings, elements or an array
 // (or fragment) containing these types
 Button.propTypes = {
+    to: PropTypes.string,
+    href: PropTypes.string,
+    primary: PropTypes.string,
+    outline: PropTypes.bool,
+    text: PropTypes.bool,
+    rounded: PropTypes.bool,
+    disabled: PropTypes.bool,
+    large: PropTypes.bool,
+    small: PropTypes.bool,
     children: PropTypes.node.isRequired,
+    className: PropTypes.string,
+    leftIcon: PropTypes.node,
+    rightIcon: PropTypes.node,
+    onClick: PropTypes.func,
 };
 
 export default Button;
