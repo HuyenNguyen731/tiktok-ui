@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import styles from './Button.module.scss';
@@ -66,5 +67,11 @@ function Button({
         </Comp>
     );
 }
+
+// ReactNode: anything that can be rendered: numbers, strings, elements or an array
+// (or fragment) containing these types
+Button.propTypes = {
+    children: PropTypes.node.isRequired,
+};
 
 export default Button;
